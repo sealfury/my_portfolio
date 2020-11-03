@@ -1,10 +1,15 @@
-import React from "react";
+import React from "react"
+import { Menu, Segment } from "semantic-ui-react";
 
 const Header = () => {
     return (
-        <nav>
-            <h1 id="header">My Portfolio</h1>
-        </nav>
+       <Segment inverted>
+           <Menu inverted secondary>
+               <Menu.Item
+                 name="my portfolio"
+               />
+           </Menu>
+       </Segment>
     );
 };
 
