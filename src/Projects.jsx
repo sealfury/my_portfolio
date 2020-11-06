@@ -23,7 +23,9 @@ class Projects extends Component {
 
         return (
             <Container>
-                <h1 id="projects-header">My Projects</h1>
+                <h1 id="projects-header" >My Projects</h1>
+                <h3>A list of my coding accomplishments to date</h3>
+                <br/>
                 <Grid>{projectsList}</Grid>
             </Container>
         );
