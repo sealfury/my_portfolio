@@ -6,7 +6,7 @@ const Hello = () => {
     return (
         <Container>
             <div>
-            <h2 id="welcome">Welcome To My Portfolio</h2>
+            <h2 id="Hello">Welcome To My Portfolio</h2>
             <p>My portfolio is empty at the moment, but head over to the<Link to="/projects">My Projects</Link>  
               page to see the projects that I've finished so far.
             </p>

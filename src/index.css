@@ -1,3 +1,5 @@
+
+
 footer {
   position: absolute;
   bottom: 0;
@@ -11,10 +13,24 @@ footer {
   text-align: center;
 }
 
+
 .container {
   margin-top: 4em;
   word-spacing: 2px;
 }
+
+.aboutDiv {
+  text-align: center;
+  display: flex;
+  padding-top: 40px;
+  align-items: center;
+  align-items: center;
+}
+
+
+
+
+
 
 body {
   margin: 0;
@@ -23,6 +39,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: blueviolet;
 }
 
 code {

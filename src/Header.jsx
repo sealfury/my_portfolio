@@ -1,6 +1,7 @@
 import React from "react"
 import { Menu, Segment } from "semantic-ui-react";
 import { NavLink, Link } from "react-router-dom";
+import './index.css'
 
 const Header = () => {
     return (
@@ -24,6 +25,12 @@ const Header = () => {
                  as={NavLink}
                  to={{ pathname: "/projects" }}
                />
+               <Menu.Item
+                 id="CV-tag"
+                 name="CV"
+                 as={NavLink}
+                 to={{ pathname: "/CV" }}
+              />
            </Menu>
        </Segment>
     );
