@@ -17,6 +17,7 @@ footer {
 .container {
   margin-top: 4em;
   word-spacing: 2px;
+  opacity: 0.8;
 }
 
 .aboutDiv {
@@ -25,10 +26,6 @@ footer {
   padding-top: 40px;
   align-items: center;
   align-items: center;
-}
-
-.Header {
-  background-color: blueviolet;
 }
 
 
