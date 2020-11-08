@@ -4,7 +4,7 @@ import { Card, Image} from "semantic-ui-react";
 
 const ProjectCard = ({ project }) => {
     return (
-        //<a href={project.link}>
+        <a href="https://github.com/sealfury">
         <Card >
             
             <Image src={project.image} wrapped ui={false} />
@@ -14,13 +14,13 @@ const ProjectCard = ({ project }) => {
                 
             </Card.Content>
             <Card.Content extra>
-                <a>
+                
                     {project.language}
-                </a>
+                
             </Card.Content>
            
         </Card>
-       //</a>
+       </a>
     );
 };
 
