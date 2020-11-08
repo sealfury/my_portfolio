@@ -1,7 +1,8 @@
 import React, { useState, useRef } from "react";
 import "./Accordion.css";
 
-function Accordion(job){
+
+function Accordion(props){
     const [setActive, setActiveState] = useState("");
     const [setHeight, setHeightState] = useState("0px");
     const [setRotate, setRotateState] = useState("accordion_icon");
@@ -20,12 +21,12 @@ function Accordion(job){
         <div className="accordion_section">
             <button className={`accordion ${setActive}`} onClick={toggleAccordion}>
                 <i className={`${setRotate}`} aria-hidden="true" class="dropdown icon"></i>
-                <p className="accordion_title">{job.name}</p>
+                <p className="accordion_title">{props.name}</p>
             </button>
             <div ref={content} style={{maxHeight: `${setHeight}`}}className="accordion_content">
                 <div 
                    className="accordion_text"
-                   dangerouslySetInnerHTML ={{ __html: job.description }}
+                   dangerouslySetInnerHTML ={{ __html: props.description }}
                 />
             </div>
         </div>

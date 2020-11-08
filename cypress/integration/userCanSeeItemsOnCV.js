@@ -1,39 +1,30 @@
-describe("User can see list of projects", () => {
+describe("User can see list of jobs and education", () => {
     beforeEach(() => {
         cy.visit("http://localhost:3000");
-        cy.get("#projects-tab").click();
+        cy.get("#CV-tab").click();
     });
 
-    it("displays first project", () => {
-        cy.get("#project-1").within(() => {
-            cy.get(".image").should("exist");
-            cy.get(".header").should("contain", "My First Website");
+    it("displays first job", () => {
+        cy.get("#job-1").within(() => {
+            cy.get(".name").should("contain", "RG21");
             cy.get(".description").should(
                 "contain",
-                "Definitely nothing about elections here"
+                "Fast fine dining in the heart of Stockholm City"
             );
+            cy.get(".year").should("contain", "2019");
         });     
     });
 
     it("displays second project", () => {
-        cy.get("#project-2").within(() => {
-            cy.get(".image").should("exist");
-            cy.get(".header").should("contain", "FizzBuzz");
+        cy.get("#job-2").within(() => {
+            cy.get(".name").should("contain", "Geronimos");
             cy.get(".description").should(
                 "contain",
-                "This was actually the first project"
+                "Tex-Mex food in an Classic Rock/Americana setting, located in Gamla Stan.  Also providing food to legendary jazz & blues club, Stampen."
             );
+            cy.get(".year").should("contain", "2016-2019");
         });
     });
 
-    // it("displays third project", () => {
-    //     cy.get("#project-3").within(() => {
-    //         cy.get(".image").should("exist");
-    //         cy.get(".header").should("contain", "ATM Challenge")
-    //         cy.get(".description").should(
-    //             "contain",
-    //             "So far, I think I prefer JS to Ruby"
-    //         );
-    //     });
-    // });
+   
 });

@@ -6,11 +6,16 @@ import Accordion from './Accordion';
 import axios from "axios";
 
 
-class Jobs extends Component {
+export default class JobsList extends Component {
     
     state = {
         jobs: []
            
+    };
+    componentDidMount() {
+        axios.get("./data/jobs.json").then((response) => {
+            this.setState({ jobs: response.data });
+        });
     };
 
     render() {
@@ -19,7 +24,7 @@ class Jobs extends Component {
         let jobsList = jobs.map((job) => {
             return (
                 <div id={`job-${job.id}`} key={job.id}>
-                    <Accordion job={job} />
+                    <Accordion  name={job.name} description={job.description, job.title}/>
                 </div>
             );
         });
@@ -30,7 +35,7 @@ class Jobs extends Component {
                 
                 <br/>
                 <div className="jobs">
-                    <Accordion  />{jobsList}
+                    <Accordion />{jobsList}
                     
                 </div>
                 <br/>
@@ -43,28 +48,14 @@ class Jobs extends Component {
         
     };
 
-    componentDidMount() {
-        axios.get("./data/jobs.json").then((response) => {
-            this.setState({ jobs: response.data });
-        });
-    }
+    
 }
 
-export default Jobs;
 
 
 
 
 
 
-// function Jobs() {
-//     return (
-//         <div className="Jobs">
-            
 
 
-//         </div>
-//     )
-// // }
-
-// export default Jobs
