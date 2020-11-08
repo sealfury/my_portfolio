@@ -7,11 +7,11 @@ describe("User can click on project cards", () => {
 
     it("links to first project", () => {
         cy.get("#project-1").click();
-        cy.get(".link").should("contain", "https://github.com/sealfury/address_book_challenge"); 
+        cy.get(".link").should("contain", "https://github.com/sealfury"); 
     });
 
     it("links to second project", () => {
         cy.get("#project-2").click();
-        cy.get(".link").should("contain", "https://github.com/sealfury/fizzbuzz"); 
+        cy.get(".link").should("contain", "https://github.com/sealfury"); 
     });
 }) 

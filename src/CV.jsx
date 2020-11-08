@@ -42,7 +42,10 @@ export default class JobsList extends Component {
                 <br/>
                 <h2 id="education-header">Education</h2>
                 <div className="education">
-                    <Accordion />
+                    <Accordion name="Stockholmsuniversitet" description="Mastersexamen i Lingvistik" />
+                </div>
+                <div>
+                    <Accordion name="University of Richmond" description="Bachelor Degree, Literature" />
                 </div>
             </Container>
         );

@@ -7,9 +7,9 @@ describe("User can see list of jobs and education", () => {
     it("displays first job", () => {
         cy.get("#job-1").within(() => {
             cy.get(".name").should("contain", "RG21");
-            cy.get(".description").should(
+            cy.get(".title").should(
                 "contain",
-                "Fast fine dining in the heart of Stockholm City"
+                "Sous Chef"
             );
             cy.get(".year").should("contain", "2019");
         });     
