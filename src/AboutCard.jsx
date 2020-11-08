@@ -6,11 +6,12 @@ const AboutCard = ({ about }) => {
     return (
         
         <Card as={NavLink} to={{ pathname: "/CV" }}>
-            <Image class="ui centered small bordered image" src={about.image} wrapped ui = {false}  />
+            <Image class="ui small centered image" centered="true" size="small" src={about.image} wrapped ui = {false}  />
             <Card.Content>
                 
                 
                 <Card.Header>{about.name}</Card.Header>
+                <Card.Meta>{about.stina}</Card.Meta>
                 <Card.Description>{about.description}</Card.Description>
                 
             </Card.Content>
