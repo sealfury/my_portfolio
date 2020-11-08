@@ -1,7 +1,10 @@
 import React, { Component } from "react";
-import { Container, Accordion, Icon } from "semantic-ui-react";
-import JobAccordion from './JobAccordion';
+import { Container } from "semantic-ui-react";
+import Accordion from './Accordion';
+
+
 import axios from "axios";
+
 
 class Jobs extends Component {
     
@@ -16,17 +19,25 @@ class Jobs extends Component {
         let jobsList = jobs.map((job) => {
             return (
                 <div id={`job-${job.id}`} key={job.id}>
-                    <JobAccordion job={job} />
+                    <Accordion job={job} />
                 </div>
             );
         });
 
         return (
             <Container>
-                <h1 id="jobs-header" >My jobs</h1>
-                <h3>A list of my coding accomplishments to date</h3>
+                <h2 id="jobs-header" >Employment History</h2>
+                
                 <br/>
-                <Accordion>{jobsList}</Accordion>
+                <div className="jobs">
+                    <Accordion  />{jobsList}
+                    
+                </div>
+                <br/>
+                <h2 id="education-header">Education</h2>
+                <div className="education">
+                    <Accordion />
+                </div>
             </Container>
         );
         
@@ -40,3 +51,20 @@ class Jobs extends Component {
 }
 
 export default Jobs;
+
+
+
+
+
+
+// function Jobs() {
+//     return (
+//         <div className="Jobs">
+            
+
+
+//         </div>
+//     )
+// // }
+
+// export default Jobs

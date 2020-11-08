@@ -27,8 +27,8 @@ class About extends Component {
                 <h1 id="about-header">About Me</h1>
                 <Divider />
                 <p>
-                    I definitely just wasted a not inconsiderable amount of time looking 
-                    up the background of a popular but apparently nonsensical latin phrase.
+                    I am currently a student at Craft Academy based in the US.  My wife and cat live in Stockholm
+                    and I hope to see them soon!
                 </p>
                 
                 <Grid>{aboutLink}</Grid>
