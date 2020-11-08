@@ -11,13 +11,14 @@ footer {
   margin-top: 0;
   margin-bottom: 0;
   text-align: center;
+  opacity: 0.4;
 }
 
 
 .container {
   margin-top: 4em;
   word-spacing: 2px;
-  opacity: 0.8;
+  
 }
 
 .aboutDiv {
