@@ -5,8 +5,8 @@ import { NavLink } from "react-router-dom";
 const AboutCard = ({ about }) => {
     return (
         
-        <Card as={NavLink} to={{ pathname: "/CV" }}>
-            <Image class="ui small centered image" centered="true" size="small" src={about.image} wrapped ui = {false}  />
+        <Card  as={NavLink} to={{ pathname: "/CV" }}>
+            <Image class="ui small image"  src={about.image} wrapped ui = {false}  />
             <Card.Content>
                 
                 
