@@ -1,11 +1,12 @@
 import React from "react";
 import { Card, Image} from "semantic-ui-react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const ProjectCard = ({ project }) => {
     return (
-        
-        <Card href={project.link}>
+        <a href={project.link}>
+        <Card >
+            
             <Image src={project.image} wrapped ui={false} />
             <Card.Content>
                 <Card.Header>{project.name}</Card.Header>
@@ -17,9 +18,9 @@ const ProjectCard = ({ project }) => {
                     {project.language}
                 </a>
             </Card.Content>
-            
+           
         </Card>
-       
+       </a>
     );
 };
 
