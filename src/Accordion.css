@@ -4,8 +4,8 @@
 }
 
 .accordion {
-    background-color: #eee;
-    color: #444;
+    background-color: rgb(247, 230, 230);
+    color: rgb(38, 3, 94);
     cursor: pointer;
     padding: 18px;
     display: flex;
@@ -17,20 +17,21 @@
 
 .accordion:hover,
 .active {
-    background-color: #ccc;
+    background-color: rgb(175, 84, 84);
 }
 
 .accordion_title {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: 600;
-    font-size: 14px;
-    margin-left: auto;
+    font-weight: 900;
+    font-size: 22px;
+    font-variant: small-caps; 
     transition: transform 0.6s ease;
     text-align: left;
+    text-decoration: aqua;
+    
 }
 
 .accordion_icon {
-    margin-left: auto;
     transition: transform 0.6s easer;
 }
 
@@ -40,15 +41,16 @@
 }
 
 .accordion_content {
-    background-color: white;
+    background-color: rgb(198, 223, 236);
     overflow: hidden;
     transition: max-height 0.6s ease;
     
 }
 
 .accordion_text {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: 400;
-    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
     padding: 18px;
+    font-variant: small-caps;
 }

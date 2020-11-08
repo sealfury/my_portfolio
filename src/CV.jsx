@@ -18,13 +18,14 @@ export default class JobsList extends Component {
         });
     };
 
+
     render() {
         const { jobs } = this.state;
 
         let jobsList = jobs.map((job) => {
             return (
                 <div id={`job-${job.id}`} key={job.id}>
-                    <Accordion  name={job.name} description={job.description, job.title}/>
+                    <Accordion  name={job.name} description={job.title} />
                 </div>
             );
         });
@@ -47,9 +48,10 @@ export default class JobsList extends Component {
         );
         
     };
-
     
-}
+};
+
+
 
 
 
