@@ -1,7 +1,7 @@
 import React from 'react'
 import { Menu, Segment } from 'semantic-ui-react'
 import { NavLink, Link } from 'react-router-dom'
-import './index.css'
+import '../index.css'
 
 const Header = () => {
   return (

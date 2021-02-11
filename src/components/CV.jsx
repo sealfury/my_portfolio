@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Container } from 'semantic-ui-react'
-import Accordion from './components/Accordion'
+import Accordion from './Accordion'
 
 import axios from 'axios'
 
