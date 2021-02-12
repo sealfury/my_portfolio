@@ -13,7 +13,6 @@ const App = () => {
       <Header />
       <Switch>
         <Route exact path='/' component={HeroSplash}></Route>
-        {/* <Route exact path='/about' component={About}></Route> */}
         <Route exact path='/projects' component={Projects}></Route>
         <Route exact path='/CV' component={CV}></Route>
         <Route exact path='/Contact' component={Contact}></Route>

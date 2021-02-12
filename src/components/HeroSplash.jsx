@@ -17,6 +17,7 @@ const HeroSplash = () => {
               bordered='true'
               inline='true'
               circular
+              spaced
               src={Sti1}
               as='a'
               href='https://github.com/sealfury'
