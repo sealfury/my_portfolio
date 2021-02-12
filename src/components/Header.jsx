@@ -3,14 +3,12 @@ import { Menu, Segment } from 'semantic-ui-react'
 import { NavLink, Link } from 'react-router-dom'
 import '../index.css'
 
-
 const Header = () => {
   return (
-    <Segment 
-    className='menuSegment'
-    inverted>
+    <Segment color='blue' className='menuSegment' inverted>
       <Menu
-        inverted 
+        color='blue'
+        inverted
         borderless='true'
         fluid='true'
         pointing='true'
