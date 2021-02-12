@@ -1,12 +1,9 @@
 [
-
-    {
+  {
     "id": 1,
     "name": "Click Stina",
     "description": "To Link To My CV",
-    "image": "./images/Sti1.png",
+    "image": "/Users/williamwallis/CraftAcademy/my_portfolio/src/assets/images/Sti1.png",
     "stina": "(a cat)"
-
-
-    }
+  }
 ]
