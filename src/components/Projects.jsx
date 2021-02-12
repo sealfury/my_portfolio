@@ -13,8 +13,12 @@ class Projects extends Component {
 
     const mainProjectsList = projects.map(project => {
       return (
-        <Card.Group  items={projects} id={`project-${project.id}`} key={project.id}>
-            <ProjectCard  project={project} />
+        <Card.Group
+          items={projects}
+          id={`project-${project.id}`}
+          key={project.id}
+        >
+          <ProjectCard project={project} />
         </Card.Group>
       )
     })
@@ -35,7 +39,17 @@ class Projects extends Component {
           Some Coding Accomplishments To Date
         </Header>
         <br />
-        <Grid centered inverted container padded stretched verticalAlign='middle' columns={3}>{mainProjectsList}</Grid>
+        <Grid
+          centered
+          inverted
+          container
+          padded
+          stretched
+          verticalAlign='middle'
+          columns={3}
+        >
+          {mainProjectsList}
+        </Grid>
       </Container>
     )
   }
