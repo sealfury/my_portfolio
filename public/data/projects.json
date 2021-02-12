@@ -1,19 +1,22 @@
-
 [
-    {
-        "id": 1,
-        "name": "My First Website",
-        "image": "https://www.telegraph.co.uk/content/dam/news/2019/08/28/TELEMMGLPICT000169908378_trans_NvBQzQNjv4BqyuLFFzXshuGqnr8zPdDWXiTUh73-1IAIBaONvUINpkg.jpeg",
-        "description": "Definitely nothing about elections here",
-        "language": "Made Using JavaScript",
-        "link": "https://github.com/sealfury/address_book_challenge"
-    },
-    {
-        "id": 2,
-        "name": "FizzBuzz",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT92MRQ_KfWhVwlSEawf1ekLljhBuCkJfIiDg&usqp=CAU",
-        "description": "This was actually the first project",
-        "language": "Made using Ruby",
-        "link": "https://github.com/sealfury/fizzbuzz"
-    }
+  {
+    "id": 1,
+    "name": "TuneShare (Mobile)",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT92MRQ_KfWhVwlSEawf1ekLljhBuCkJfIiDg&usqp=CAU",
+    "description": "A mobile app modeled after instagram to allow users to share and play music",
+    "language": "Made Using React Native",
+    "link": "https://github.com/sealfury/tuneshare_client",
+    "icon": "react",
+    "color": "teal"
+  },
+  {
+    "id": 2,
+    "name": "TuneShare (API)",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT92MRQ_KfWhVwlSEawf1ekLljhBuCkJfIiDg&usqp=CAU",
+    "description": "An API built using Ruby to consume the Spotify Web API and retain user data",
+    "language": "Made using Ruby",
+    "link": "https://github.com/sealfury/tuneshare_api",
+    "icon": "gem",
+    "color": "red"
+  }
 ]

@@ -34,6 +34,14 @@ html body {
   color: black;
 }
 
+.headerIcon {
+  opacity: 0.7;
+}
+
+.projectsHeader {
+  font-size: 80;
+}
+
 .menuSegment {
   opacity: 0.6;
 }

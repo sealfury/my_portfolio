@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Container, Grid } from 'semantic-ui-react'
+import { Card, Container, Grid, Header, Icon } from 'semantic-ui-react'
 import ProjectCard from './ProjectCard'
 import axios from 'axios'
 
@@ -11,20 +11,31 @@ class Projects extends Component {
   render() {
     const { projects } = this.state
 
-    let projectsList = projects.map(project => {
+    const mainProjectsList = projects.map(project => {
       return (
-        <div id={`project-${project.id}`} key={project.id}>
-          <ProjectCard project={project} />
-        </div>
+        <Card.Group  items={projects} id={`project-${project.id}`} key={project.id}>
+            <ProjectCard  project={project} />
+        </Card.Group>
       )
     })
 
     return (
       <Container>
-        <h1 id='projects-header'>My Projects</h1>
-        <h3>A list of my coding accomplishments to date</h3>
+        <Header
+          className='headerIcon'
+          size='massive'
+          icon
+          textAlign='center'
+          as='h2'
+          id='projects-header'
+        >
+          <Icon name='code branch' inverted color='purple' circular />
+        </Header>
+        <Header as='h1' textAlign='center' color='yellow' dividing>
+          Some Coding Accomplishments To Date
+        </Header>
         <br />
-        <Grid>{projectsList}</Grid>
+        <Grid centered inverted container padded stretched verticalAlign='middle' columns={3}>{mainProjectsList}</Grid>
       </Container>
     )
   }
