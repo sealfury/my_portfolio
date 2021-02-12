@@ -3,7 +3,7 @@ import React from 'react'
 const Footer = () => {
   return (
     <footer>
-      <p id='footer'>Made with React {React.version}</p>
+      <p id='footer'>Contact Links Coming Soon</p>
     </footer>
   )
 }

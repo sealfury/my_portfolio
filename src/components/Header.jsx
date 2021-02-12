@@ -3,21 +3,23 @@ import { Menu, Segment } from 'semantic-ui-react'
 import { NavLink, Link } from 'react-router-dom'
 import '../index.css'
 
+
 const Header = () => {
   return (
-    <Segment inverted>
-      <Menu inverted secondary>
+    <Segment 
+    className='menuSegment'
+    inverted>
+      <Menu
+        inverted 
+        borderless='true'
+        fluid='true'
+        pointing='true'
+      >
         <Menu.Item
           id='header'
           name='my portfolio'
           as={Link}
           to={{ pathname: '/' }}
-        />
-        <Menu.Item
-          id='about-tab'
-          name='about me'
-          as={NavLink}
-          to={{ pathname: '/about' }}
         />
         <Menu.Item
           id='projects-tab'
@@ -30,6 +32,13 @@ const Header = () => {
           name='CV'
           as={NavLink}
           to={{ pathname: '/CV' }}
+        />
+        <Menu.Item
+          id='Contact-tab'
+          name='Contact'
+          as={NavLink}
+          to={{ pathname: '/Contact' }}
+          position='right'
         />
       </Menu>
     </Segment>

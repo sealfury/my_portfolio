@@ -4,8 +4,8 @@
 }
 
 .accordion {
-    background-color: rgb(247, 230, 230);
-    color: rgb(38, 3, 94);
+    background-color: rgb(241, 234, 242);
+    color: rgb(0, 0, 0);
     cursor: pointer;
     padding: 18px;
     display: flex;
@@ -17,7 +17,7 @@
 
 .accordion:hover,
 .active {
-    background-color: rgb(175, 84, 84);
+    background-color: rgb(206, 214, 232);
 }
 
 .accordion_title {
@@ -27,7 +27,7 @@
     font-variant: small-caps; 
     transition: transform 0.6s ease;
     text-align: left;
-    text-decoration: aqua;
+
     
 }
 
@@ -54,3 +54,4 @@
     padding: 18px;
     font-variant: small-caps;
 }
+

@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Form, Button, Container, Icon } from 'semantic-ui-react'
 
 const encode = data => {
   return Object.keys(data)
@@ -29,44 +30,56 @@ class ContactForm extends Component {
   render() {
     const { name, email, message } = this.state
     return (
-      <form onSubmit={this.handleSubmit} netlify name='contact'>
-        <input type='hidden' name='form-name' value='contact' />
-        <p>
-          <label>
-            Your Name:
-            <input
-              type='text'
-              name='name'
-              value={name}
-              onChange={this.handleChange}
-            />
-          </label>
-        </p>
-        <p>
-          <label>
-            Your Email:
-            <input
-              type='email'
-              name='email'
-              value={email}
-              onChange={this.handleChange}
-            />
-          </label>
-        </p>
-        <p>
-          <label>
-            Message:
-            <textarea
-              name='message'
-              value={message}
-              onChange={this.handleChange}
-            />
-          </label>
-        </p>
-        <p>
-          <button type='submit'>Send</button>
-        </p>
-      </form>
+      <Container>
+        <Form  onSubmit={this.handleSubmit} netlify name='contact'>
+          <input type='hidden' name='form-name' value='contact' />
+          <Form.Field>
+            <label className='formlabel'>
+              Your Name:
+              <input
+                className='formfield'
+                type='text'
+                name='name'
+                value={name}
+                onChange={this.handleChange}
+              />
+            </label>
+          </Form.Field>
+          <Form.Field>
+            <label className='formlabel'>
+              Your Email:
+              <input
+                className='formfield'
+                type='email'
+                name='email'
+                value={email}
+                onChange={this.handleChange}
+              />
+            </label>
+          </Form.Field>
+          <Form.Field>
+            <label className='formlabel'>
+              Message:
+              <textarea
+                className='formfield'
+                name='message'
+                value={message}
+                onChange={this.handleChange}
+              />
+            </label>
+          </Form.Field>
+          <Form.Field>
+            <Button animated color='blue' type='submit'>
+              <Button.Content color='white' visible>
+                Send
+              </Button.Content>
+              <Button.Content hidden>
+                <Icon color='white' name='send' />
+              </Button.Content>
+            </Button>
+          </Form.Field>
+        </Form>
+      </Container>
     )
   }
 }
