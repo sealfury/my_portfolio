@@ -82,7 +82,14 @@ html body {
   align-items: center;
 }
 
+.accordionIndent {
+  margin-left: 1em;
+}
 
+.accordionPadding {
+  padding: 0px;
+  margin: 0px;
+}
 
 
 body {

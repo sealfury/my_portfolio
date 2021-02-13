@@ -31,7 +31,7 @@ class ContactForm extends Component {
     const { name, email, message } = this.state
     return (
       <Container>
-        <Form  onSubmit={this.handleSubmit} netlify name='contact'>
+        <Form onSubmit={this.handleSubmit} netlify name='contact'>
           <input type='hidden' name='form-name' value='contact' />
           <Form.Field>
             <label className='formlabel'>
