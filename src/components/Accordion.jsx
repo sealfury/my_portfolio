@@ -1,7 +1,9 @@
 import React from 'react'
 import { Accordion } from 'semantic-ui-react'
 
-const AccordionContent = content => <div>{content}</div>
+const AccordionContent = content => (
+  <div className='accordionContent'>{content}</div>
+)
 
 const WorkSubAccordionPanels = [
   {
@@ -15,15 +17,17 @@ const WorkSubAccordionPanels = [
     key: 'gmos',
   },
 ]
+
 const WorkSubAccordionContent = (
   <div className='accordionIndent'>
     <Accordion.Accordion
-      style={{ marginLeft: '20px' }}
+      style={{ marginLeft: '10px', marginTop: '4px' }}
       className='accordionPadding'
       panels={WorkSubAccordionPanels}
     />
   </div>
 )
+
 const EducationSubAccPanels = [
   {
     title: 'Stockholms Universitet',
@@ -45,7 +49,7 @@ const EducationSubAccPanels = [
 const EducationSubAccContent = (
   <div className='accordionIndent'>
     <Accordion.Accordion
-      style={{ marginLeft: '20px' }}
+      style={{ marginLeft: '10px', marginTop: '4px' }}
       className='accordionPadding'
       panels={EducationSubAccPanels}
     />
@@ -80,8 +84,15 @@ const AccordionPanels = [
 ]
 
 const CvAccordion = () => {
-  return <Accordion defaultActiveIndex={0} panels={AccordionPanels} />
+  return (
+    <Accordion
+      className='CvAccordion'
+      defaultActiveIndex={0}
+      panels={AccordionPanels}
+      fluid
+      styled
+    />
+  )
 }
 
 export default CvAccordion
-
