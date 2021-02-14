@@ -14,8 +14,28 @@
     "name": "TuneShare (API)",
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT92MRQ_KfWhVwlSEawf1ekLljhBuCkJfIiDg&usqp=CAU",
     "description": "An API built using Ruby to consume the Spotify Web API and retain user data",
-    "language": "Made using Ruby",
+    "language": "Made using Ruby on Rails",
     "link": "https://github.com/sealfury/tuneshare_api",
+    "icon": "gem",
+    "color": "red"
+  },
+  {
+    "id": 3,
+    "name": "Dream Time News (Web Client)",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT92MRQ_KfWhVwlSEawf1ekLljhBuCkJfIiDg&usqp=CAU",
+    "description": "A new service app with a private server offering registration and subscription",
+    "language": "Made using React",
+    "link": "https://github.com/sealfury/dream_time_news_client_user",
+    "icon": "react",
+    "color": "teal"
+  },
+  {
+    "id": 4,
+    "name": "Dream Time News (API)",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT92MRQ_KfWhVwlSEawf1ekLljhBuCkJfIiDg&usqp=CAU",
+    "description": "A from-scratch API to serve the Dream Time News admin and user client apps",
+    "language": "Made using Ruby on Rails",
+    "link": "https://github.com/sealfury/dream_time_news_api",
     "icon": "gem",
     "color": "red"
   }

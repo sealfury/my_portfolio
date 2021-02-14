@@ -46,7 +46,8 @@ class Projects extends Component {
           padded
           stretched
           verticalAlign='middle'
-          columns={3}
+          columns={4}
+          className="projectGrid"
         >
           {mainProjectsList}
         </Grid>

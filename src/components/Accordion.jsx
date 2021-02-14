@@ -90,7 +90,7 @@ const CvAccordion = () => {
       defaultActiveIndex={0}
       panels={AccordionPanels}
       fluid
-      styled
+      inverted
     />
   )
 }

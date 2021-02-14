@@ -5,7 +5,7 @@ import CvAccordion from './Accordion'
 const CV = () => {
   return (
     <Container style={{ backgroundColor: 'rgb(112, 72, 212, 0.4)' }}>
-      <Segment raised inverted color='blue' className='accordionSegment'>
+      <Segment raised inverted color='violet' className='accordionSegment'>
         <CvAccordion />
       </Segment>
     </Container>
